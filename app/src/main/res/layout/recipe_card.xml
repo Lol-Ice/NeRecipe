@@ -18,6 +18,15 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@drawable/ic_launcher_foreground" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/faveRecipeCardMaterialButton"
+        style="@style/Widget.AppTheme.FaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkable="true"
+        android:contentDescription="@string/fave_button_recipe_card_description"
+        app:layout_constraintBottom_toBottomOf="@id/recipeCardImageView"
+        app:layout_constraintEnd_toEndOf="@id/recipeCardImageView" />
 
     <TextView
         android:id="@+id/titleRecipeCardTextView"
@@ -37,6 +46,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/recipeCardOptionsMaterialButton"
+        style="@style/Widget.AppTheme.OptionsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/options_text_description"

@@ -10,7 +10,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -49,7 +50,9 @@
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@id/newRecipeImageView"
                 app:layout_constraintStart_toStartOf="@id/newRecipeImageView"
-                app:layout_constraintTop_toBottomOf="@id/newRecipeImageView" />
+                app:layout_constraintTop_toBottomOf="@id/newRecipeImageView"
+                android:autofillHints=""
+                tools:ignore="TextFields" />
 
             <EditText
                 android:id="@+id/newRecipeTimeEditText"
@@ -61,7 +64,8 @@
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@id/newRecipeImageView"
                 app:layout_constraintStart_toStartOf="@id/newRecipeImageView"
-                app:layout_constraintTop_toBottomOf="@id/newRecipeNameEditText" />
+                app:layout_constraintTop_toBottomOf="@id/newRecipeNameEditText"
+                android:autofillHints="" />
 
             <TextView
                 android:id="@+id/newRecipeCategoriesWordTextView"
@@ -142,7 +146,9 @@
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toStartOf="@id/newRecipeAddIngredientButton"
                 app:layout_constraintStart_toStartOf="@id/newRecipeImageView"
-                app:layout_constraintTop_toBottomOf="@id/newRecipeIngredientsList" />
+                app:layout_constraintTop_toBottomOf="@id/newRecipeIngredientsList"
+                android:autofillHints=""
+                tools:ignore="TextFields" />
 
             <TextView
                 android:id="@+id/newRecipeStepsWordTextView"
@@ -177,7 +183,9 @@
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toStartOf="@id/newRecipeAddImageStepImageButton"
                 app:layout_constraintStart_toStartOf="@id/newRecipeImageView"
-                app:layout_constraintTop_toBottomOf="@id/newRecipeStepsList" />
+                app:layout_constraintTop_toBottomOf="@id/newRecipeStepsList"
+                tools:ignore="TextFields,UnknownId"
+                android:autofillHints="" />
 
 
 

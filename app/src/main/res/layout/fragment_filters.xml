@@ -18,6 +18,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/filtersAllCategoryCheckBox"
+        style="@style/Widget.AppTheme.DeleteStepButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/common_spacing"
+        android:paddingEnd="@dimen/common_spacing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/filtersTitleTextView" />
 
     <TextView
         android:id="@+id/filtersAllCategoryTextView"
@@ -31,16 +40,14 @@
         app:layout_constraintBottom_toBottomOf="@id/filtersAllCategoryCheckBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/filtersAllCategoryCheckBox"
-        app:layout_constraintTop_toBottomOf="@id/filtersTitleTextView"
-        tools:ignore="UnknownId" />
+        app:layout_constraintTop_toBottomOf="@id/filtersTitleTextView" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/filtersAllCategoryBarrier"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:barrierDirection="bottom"
-        app:constraint_referenced_ids="filtersAllCategoryBarrier, filtersAllCategoryCheckBox"
-        tools:ignore="UnknownId" />
+        app:constraint_referenced_ids="filtersAllCategoryBarrier, filtersAllCategoryCheckBox" />
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -76,5 +83,8 @@
         app:layout_constraintTop_toBottomOf="@id/resetFilterButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 
 

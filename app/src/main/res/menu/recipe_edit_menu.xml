@@ -6,7 +6,7 @@
         android:id="@+id/menu_cancel_button"
         android:icon="@drawable/ic_cancel_button_24dp"
         android:title="@string/action_bar_cancel_button"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
 
     <item
         android:title=""
