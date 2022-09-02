@@ -31,14 +31,16 @@
         app:layout_constraintBottom_toBottomOf="@id/filtersAllCategoryCheckBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/filtersAllCategoryCheckBox"
-        app:layout_constraintTop_toBottomOf="@id/filtersTitleTextView" />
+        app:layout_constraintTop_toBottomOf="@id/filtersTitleTextView"
+        tools:ignore="UnknownId" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/filtersAllCategoryBarrier"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:barrierDirection="bottom"
-        app:constraint_referenced_ids="filtersAllCategoryBarrier, filtersAllCategoryCheckBox" />
+        app:constraint_referenced_ids="filtersAllCategoryBarrier, filtersAllCategoryCheckBox"
+        tools:ignore="UnknownId" />
 
 
     <androidx.recyclerview.widget.RecyclerView
