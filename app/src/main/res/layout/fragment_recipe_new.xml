@@ -32,6 +32,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/newRecipeAddRecipeImageMaterialButton"
+                style="@style/Widget.AppTheme.AddImageButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/recipe_add_recipe_image"
@@ -125,6 +126,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/newRecipeAddIngredientButton"
+                style="@style/Widget.AppTheme.OkButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/common_spacing"
@@ -179,10 +181,20 @@
                 app:layout_constraintStart_toStartOf="@id/newRecipeImageView"
                 app:layout_constraintTop_toBottomOf="@id/newRecipeStepsList" />
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/newRecipeAddImageStepImageButton"
+                style="@style/Widget.AppTheme.AddImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/new_recipe_add_step_image_description"
+                app:layout_constraintBottom_toBottomOf="@id/newRecipeStepsEditText"
+                app:layout_constraintEnd_toStartOf="@id/newRecipeAddStepImageButton"
+                app:layout_constraintTop_toTopOf="@id/newRecipeStepsEditText" />
 
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/newRecipeAddStepImageButton"
+                style="@style/Widget.AppTheme.OkButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/common_spacing"
