@@ -12,28 +12,16 @@
         android:contentDescription="@string/ingredient_text_description"
         android:padding="@dimen/common_spacing"
         android:textSize="@dimen/text_size"
-        app:layout_constraintEnd_toStartOf="@id/deleteIngredientMaterialButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
         tools:text="300 г селедки" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/deleteIngredientMaterialButton"
-        style="@style/Widget.AppTheme.DeleteStepButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/common_spacing"
-        android:contentDescription="@string/delete_ingredient_text_description"
-        app:layout_constraintBottom_toBottomOf="@id/ingredientTextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/ingredientTextView" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrierBottomStep"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:barrierDirection="bottom"
-        app:constraint_referenced_ids="ingredientTextView, deleteIngredientMaterialButton" />
+        app:barrierDirection="bottom" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

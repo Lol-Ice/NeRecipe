@@ -8,7 +8,7 @@ class MyApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        appContext = applicationContext
+        MyApp.appContext = applicationContext
     }
 
     companion object {
